@@ -64,20 +64,21 @@ p {
     margin: 10px;
 }
 
-.about, .portfolio {
+.about, .portfolio, .contributions, .articles {
     font-size: 14px;
     font-family: 'Comfortaa', cursive;
 }
 
-.about ul, .about ol, .portfolio ul, .portfolio ol {
+.about ul, .about ol, .portfolio ul, .portfolio ol, .contributions ul, .contributions ol, .articles ul, .articles ol  {
     margin: 0;
 }
 
 .about p, .portfolio p{
     text-align: justify !important;
+    margin-left: 0;
 }
 
-.about i, .portfolio i {
+.about i, .portfolio i, .contributions i, .articles i {
     font-size: 60px;
 }
 
@@ -86,15 +87,21 @@ p {
 }
 
 .about a, .portfolio a {
-    color: #252974;
+    color: #41459e;
     transition: all linear 0.3s;
 }
 
 .about a:hover, .portfolio a:hover {
     font-weight: bolder;
+    text-decoration: none;
+    color: #000;
 }
 
-.about .content-list li, .portfolio .content-list li {
+.about .content-list li,
+.portfolio .content-list li,
+.contributions .content-list li,
+.articles .content-list li
+{
     text-align: left !important;
     font-family: 'Comfortaa', cursive;
 }
@@ -102,6 +109,28 @@ p {
 
 .portfolio {
     text-align: left;
+}
+
+.portfolio img {
+    height: 70px !important;
+    width: 170px !important;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #666;
+}
+
+.portfolio .row {
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.portfolio .row h6 {
+    font-weight: 900;
+}
+
+.portfolio .row a:hover {
+    text-decoration: none;
+    color: #000;
 }
 
 .socials {
